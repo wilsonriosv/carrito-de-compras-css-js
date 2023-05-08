@@ -26,8 +26,6 @@ header{
     justify-content: center;
     gap: 15%;
     height: 70px;
-    top: 0;
-    position: fixed;
     width: 100%;
 }
 
@@ -66,7 +64,9 @@ header{
     padding: 5px;
     color: black;
 }
-
+option {
+    color: black;
+}
 .contenedor .button {
     margin-top: 20px;
     height: 30px;
@@ -133,16 +133,16 @@ header{
 .noExisteError {
     margin: 15px 0px;
 }
-.repetidoError::after,
-.realizado::after,
 .llenarCampos::after,
-.noExisteError::after {
+.noExisteError::after,
+.repetidoError::after,
+.realizado::after {
     background-color: red;
     font-size: 17px;
     padding: 10px;
     border-radius: 10px;
 }
-.realizado {
+.realizado::after {
     content: 'Realizado';
     background-color: green;
 }
